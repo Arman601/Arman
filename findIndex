@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class sumOfDigits {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Asking user to enter a string
+        System.out.print("Enter a string: ");
+        String n = sc.nextLine();
+
+        // Asking user to enter a single character
+        System.out.print("Enter a character to search: ");
+        char ch = sc.next().charAt(0);
+        int ind = n.lastIndexOf(ch);
+
+        // Display entered values
+        System.out.println("\nYou entered string: " + n);
+        System.out.println("You entered character: " + ch);
+        System.out.println("The index of Given String = " + ind);
+
+        sc.close();
+    }
+}
